@@ -9,10 +9,11 @@ namespace _3_4.Classes_and_others
 {
     sealed class Massive2<T> : PapaArray<T>
     {
+        private T[,] array;
         private int b;
         private int c;
 
-        private T[,] array;
+
 
         public Massive2(INewValues<T> values, bool inputt = false) : base(values, inputt) { }
 
@@ -66,7 +67,7 @@ namespace _3_4.Classes_and_others
             }
         }
 
-        public void Snake_Print()
+        public void S_Print()
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {
