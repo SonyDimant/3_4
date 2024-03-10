@@ -10,15 +10,16 @@ namespace _3_4.Classes_and_others
     class DoubleNewValues : INewValues<double>
     {
         Random rnd = new Random();
+        public double IntValue()
+        {
+            return double.Parse(Console.ReadLine());
+        }
         public double RandomValue()
         {
             return rnd.NextDouble();
         }
 
-        public double IntValue()
-        {
-            return double.Parse(Console.ReadLine());
-        }
+        
     }
 }
 
