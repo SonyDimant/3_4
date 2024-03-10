@@ -10,14 +10,15 @@ namespace _3_4.Classes_and_others
     class IntNewValues : INewValues<int>
     {
         Random rnd = new Random();
+        public int IntValue()
+        {
+            return int.Parse(Console.ReadLine());
+        }
         public int RandomValue()
         {
             return rnd.Next(100);
         }
 
-        public int IntValue()
-        {
-            return int.Parse(Console.ReadLine());
-        }
+
     }
 }
