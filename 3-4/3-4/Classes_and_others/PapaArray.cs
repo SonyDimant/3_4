@@ -10,13 +10,12 @@ namespace _3_4.Classes_and_others
 {
     abstract class PapaArray<T> : IPrinter, IPapaArray
     {
+        protected INewValues<T> newvalues;
+        protected static Random rnd = new Random();
         protected StringNewValues sstring = new();
         protected BoolNewValues bbool = new();
         protected DoubleNewValues ddouble = new();
 
-        protected INewValues<T> newvalues;
-
-        protected static Random rnd = new Random();
 
         protected bool inputt = false;
 
@@ -27,9 +26,8 @@ namespace _3_4.Classes_and_others
             Fill();
         }
 
-        public abstract void RndInputt();
-
         public abstract void UserInputt();
+        public abstract void RndInputt();
 
         public abstract void Print();
 
