@@ -12,12 +12,11 @@ namespace _3_4
     {
         static void Main(string[] args)
         {
-            IPrinter[] printer_array = new IPrinter[7];
-
             IntNewValues iint = new();
             StringNewValues sstring = new();
             BoolNewValues bbool = new();
             DoubleNewValues ddouble = new();
+            IPrinter[] printer_array = new IPrinter[7];
 
             Console.WriteLine("Выберите способ ввода: false - случайно, true - вручную");
             bool inputt = bool.Parse(Console.ReadLine());
@@ -34,8 +33,6 @@ namespace _3_4
             Massive_1<bool> boolmassive1 = new(bbool, inputt);
             printer_array[3] = boolmassive1;
 
-            Console.WriteLine();
-
             Massive2<int> intmassive2 = new(iint, inputt);
             printer_array[4] = intmassive2;
             Massive2<string> stringmassive2 = new(sstring, inputt);
@@ -44,10 +41,7 @@ namespace _3_4
             printer_array[6] = doublemassive2;
             Massive2<bool> boolmassive2 = new(bbool, inputt);
             printer_array[7] = boolmassive2;
-
-            Console.WriteLine();
-
-
+            
             for (int i = 0; i < printer_array.Length; i++)
             {
                 Console.WriteLine($"Массив {printer_array[i].GetType()}:");
