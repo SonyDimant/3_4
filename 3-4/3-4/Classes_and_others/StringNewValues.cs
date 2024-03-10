@@ -12,8 +12,12 @@ namespace _3_4.Classes_and_others
         Random rnd = new();
         public string RandomValue()
         {
-            string alph = "qwertyuiopasdfghjklzxcvbnm1234567890";
+            string alph = "1234567890qwertyuiopasdfghjklzxcvbnm";
             string x = "";
+            public string IntValue()
+            {
+                return Console.ReadLine();
+            }
             for (int i = 0; i < rnd.Next(10); i++)
             {
                 x += alph[rnd.Next(alph.Length)];
@@ -21,9 +25,6 @@ namespace _3_4.Classes_and_others
             return x;
         }
 
-        public string IntValue()
-        {
-            return Console.ReadLine();
-        }
+       
     }
 }
