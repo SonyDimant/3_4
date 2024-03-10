@@ -9,7 +9,8 @@ namespace _3_4.Interface
 {
     class INewValues<T>
     {
-        T RandomValue();
         T IntValue();
+        T RandomValue();
+
     }
 }
