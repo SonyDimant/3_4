@@ -8,7 +8,7 @@ using _3_4.Classes_and_others;
 
 namespace _3_4
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,10 @@ namespace _3_4
             StringNewValues sstring = new();
             BoolNewValues bbool = new();
             DoubleNewValues ddouble = new();
-            IPrinter[] printer_array = new IPrinter[7];
+            IPrinter[] printer_array = new IPrinter[]
+            {
+                one, two
+            };
 
             Console.WriteLine("Выберите способ ввода: false - случайно, true - вручную");
             bool inputt = bool.Parse(Console.ReadLine());
