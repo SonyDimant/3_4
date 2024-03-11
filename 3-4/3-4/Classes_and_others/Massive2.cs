@@ -67,18 +67,16 @@ namespace _3_4.Classes_and_others
             }
         }
 
-        public void S_Print()
+        public void Print()
         {
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                for (int j = 0; j < array.GetLength(1); j++)
-                {
-                    int j1 = i % 2 == 0
-                        ? j
-                        : array.GetLength(1) - 1 - j;
+            int rows = array.GetLength(0);
+            int columns = array.GetLength(1);
 
-                    Console.Write(array[i, j1]);
-                    Console.Write(" ");
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(array[i, j] + " ");
                 }
                 Console.WriteLine();
             }
