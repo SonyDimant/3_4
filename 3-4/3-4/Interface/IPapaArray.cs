@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3_4.Interface
 {
-    interface IPapaArray : IPrinter
+    internal interface IPapaArray : IPrinter
     {
         void Fill();
     }
