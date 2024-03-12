@@ -16,10 +16,7 @@ namespace _3_4
             StringNewValues sstring = new();
             BoolNewValues bbool = new();
             DoubleNewValues ddouble = new();
-            IPrinter[] printer_array = new IPrinter[]
-            {
-                one, two
-            };
+            IPrinter[] printer_array = new IPrinter[7];
 
             Console.WriteLine("Выберите способ ввода: false - случайно, true - вручную");
             bool inputt = bool.Parse(Console.ReadLine());
